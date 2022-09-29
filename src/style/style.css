@@ -1,0 +1,279 @@
+html {
+  width: 1440px;
+  height: 1024px;
+}
+body {
+  background-color: #e5e5e5;
+  width: 1440px;
+  height: 1024px;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../assets/img/bola-LogoCompass.svg");
+  background-repeat: no-repeat;
+  background-position-x: 804px;
+  background-position-y: 472px;
+}
+img {
+  opacity: 70%;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  border-radius: 35px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px #a8a8a840;
+}
+
+.menu {
+  color: #ffffff;
+  background-color: #6688ff;
+  height: 50px;
+  width: 540px;
+  left: -7px;
+  bottom: 20px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 12px 0px 12px 24px;
+}
+.title-menu {
+  margin-top: 6px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.text-menu {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.btn-style-um {
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2cbe82;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.btn-style-dois {
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #da2b40;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+#txt {
+  margin-right: 40px;
+  font-size: 40px;
+}
+.section-atividade {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.atividade-descricao {
+  background-color: #e5e5e5;
+  height: 25px;
+  width: 260px;
+  border-radius: 10px;
+  border: solid #2cbe82 1px;
+  padding: 10px 120px 10px 12px;
+}
+.weekday-select {
+  background-color: #e5e5e5;
+  height: 44px;
+  width: 180px;
+  border-radius: 10px;
+  border: solid #2cbe82 1px;
+  padding: 10px 84px 10px 12px;
+}
+
+/* .select-editable {
+  position: relative;
+  background-color: white;
+  border: solid #2cbe82 1px;
+  width: 120px;
+  height: 18px;
+  border-radius: 10px;
+}
+.select-editable select {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 14px;
+  border: none;
+  width: 120px;
+  margin: 0;
+}
+.select-editable input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  padding: 1px;
+  font-size: 12px;
+  border: none;
+}
+.select-editable select:focus,
+.select-editable input:focus {
+  outline: none;
+} */
+.btn-adicionar-atividade {
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  background-color: #2cbe82;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.btn-excluir-atividade {
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  background-color: #da2b40;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.excluir-atividade {
+  margin-bottom: 5px;
+  margin-right: 6px;
+}
+.adicionar-atividade {
+  width: 13px;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+.flex-container {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+.container-timezone {
+  display: flex;
+  width: 5%;
+  height: 75px;
+  align-items: center;
+}
+.container-dias {
+  display: flex;
+  margin-right: 20px;
+  width: 91%;
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px #a8a8a840;
+  flex-shrink: 0;
+}
+.horario-timezone {
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #a8a8a840;
+  padding: 30px 12px;
+}
+.btn {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 5px 23px;
+}
+.btn-segunda-feira {
+  background-color: #ffa246;
+}
+.btn-terca-feira {
+  background-color: #35e185;
+}
+.btn-quarta-feira {
+  background-color: #6688ff;
+}
+.btn-quinta-feira {
+  background-color: #b266ff;
+}
+.btn-sexta-feira {
+  background-color: #66d1ff;
+}
+.btn-sabado {
+  background-color: #ff66d4;
+}
+.btn-domingo {
+  background-color: #ff6666;
+}
+.container-scrollbar-horizontal {
+    height: 800px;
+    width: 1180px;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+.scrollbar-horizontal{
+  width: 1400px;
+  text-align: center;
+  display: flex;
+}
+/* .Flipped, .Flipped .scrollbar{
+  transform: rotateX(180deg);
+} */
+.container-scrollbar-horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+.container-scrollbar-horizontal::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.container-scrollbar-horizontal::-webkit-scrollbar-thumb {
+  background:#DCDFE3;
+  border-radius: 5px;
+}
+.container-scrollbar-horizontal::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 124, 124);
+}
+.container-scrollbar-vertical::-webkit-scrollbar {
+  width: 16px;
+}
+.container-scrollbar-vertical::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.container-scrollbar-vertical::-webkit-scrollbar-thumb {
+  background:#DCDFE3;
+  border: 5px solid #FFFFFF; 
+  border-radius: 10px;
+}
+.container-scrollbar-vertical::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 124, 124);
+}
+.container-scrollbar-vertical{
+  margin-top: 20px;
+  height: 800px;
+  width: 1400px;
+  overflow-y: auto;
+
+}
+.scrollbar-vertical{
+  height: 200px;
+  text-align: center;
+}
+
+#digito{
+  background-color: #bf90ee;
+padding: 50px 120px;
+border-radius: 8px;
+}
