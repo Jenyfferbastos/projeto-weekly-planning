@@ -189,7 +189,6 @@ img {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   border: none;
   border-top-left-radius: 9px;
@@ -218,15 +217,18 @@ img {
   background-color: #ff6666;
 }
 .container-scrollbar-horizontal {
-    height: 800px;
-    width: 1180px;
-    overflow-y: auto;
-    margin: 0 auto;
-  }
-.scrollbar-horizontal{
+  height: 800px;
+  width: 1180px;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.scrollbar-horizontal {
   width: 1400px;
   text-align: center;
   display: flex;
+  flex-direction: column;
 }
 /* .Flipped, .Flipped .scrollbar{
   transform: rotateX(180deg);
@@ -235,11 +237,11 @@ img {
   height: 8px;
 }
 .container-scrollbar-horizontal::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
 }
 .container-scrollbar-horizontal::-webkit-scrollbar-thumb {
-  background:#DCDFE3;
+  background: #dcdfe3;
   border-radius: 5px;
 }
 .container-scrollbar-horizontal::-webkit-scrollbar-thumb:hover {
@@ -249,31 +251,32 @@ img {
   width: 16px;
 }
 .container-scrollbar-vertical::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
 }
 .container-scrollbar-vertical::-webkit-scrollbar-thumb {
-  background:#DCDFE3;
-  border: 5px solid #FFFFFF; 
+  background: #dcdfe3;
+  border: 5px solid #ffffff;
   border-radius: 10px;
 }
 .container-scrollbar-vertical::-webkit-scrollbar-thumb:hover {
   background: rgb(125, 124, 124);
 }
-.container-scrollbar-vertical{
+.container-scrollbar-vertical {
   margin-top: 20px;
   height: 800px;
   width: 1400px;
   overflow-y: auto;
-
 }
-.scrollbar-vertical{
+.scrollbar-vertical {
   height: 200px;
   text-align: center;
 }
 
-#digito{
+#digito {
+  width: 10%;
   background-color: #bf90ee;
-padding: 50px 120px;
-border-radius: 8px;
+  padding: 50px 50px;
+  border-radius: 8px;
+  margin: 5px;
 }
