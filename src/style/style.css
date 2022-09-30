@@ -227,12 +227,12 @@ img {
 .scrollbar-horizontal {
   width: 1400px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-/* .Flipped, .Flipped .scrollbar{
+  height: 100%;
   transform: rotateX(180deg);
-} */
+}
+.Flipped, .Flipped .scrollbar{
+  transform: rotateX(180deg);
+}
 .container-scrollbar-horizontal::-webkit-scrollbar {
   height: 8px;
 }
@@ -279,4 +279,12 @@ img {
   padding: 50px 50px;
   border-radius: 8px;
   margin: 5px;
+}
+
+input{
+  margin: .4rem 0;
+  border-radius: 8px;
+  background-color: #E5E5E5;
+  border: solid #2cbe82 1px;
+  padding: 5px;
 }

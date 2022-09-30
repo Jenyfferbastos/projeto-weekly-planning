@@ -16,6 +16,9 @@
 </head>
 
 <body onload="time()">
+
+  <!-- HEADER -->
+
   <header>
     <div class="container-header">
       <div class="menu">
@@ -31,14 +34,20 @@
     </div>
     </div>
   </header>
+
+  <!-- CONTAINER SCROLLBAR VERTICAL -->
+
   <div class="container-scrollbar-vertical">
     <div class="scrollbar-vertical">
+
+      <!-- FORMULÁRIO LOCALSTORAGE -->
       <section class="section-atividade">
 
-
+        <!-- INPUT DESCRIÇÃO ATIVIDADE -->
         <input type="text" name="valor" id="valor" class="atividade-descricao" placeholder="Atividade">
         <input type="submit" name="" onclick="chamar()">
 
+        <!-- SELECT DIAS DA SEMANA -->
         <select class="weekday-select" aria-label="Dias da semana">
           <option selected></option>
           <option value="1">Segunda-feira</option>
@@ -50,49 +59,21 @@
           <option value="7">Domingo</option>
         </select>
 
-        <!-- <select onchange="this.nextElementSibling.value=this.value"> -->
+        <!-- SELECT DE HORÁRIOS -->
+        <label for="appt"></label>
+        <input value="00h12"
+      type="text" id="appt" name="appt" min="09:00" max="18:00" required>
 
-        <!-- <div class="container-select-editable">
-      <input type="text" name="horarios" placeholder="Horário" onFocus="selecteditable(0)" onBlur="selecteditable(1)"/>
-
-      <div class="selectEditable">
-        <div class="list-select-editable">
-          <div class="item" id="item-1" onMouseDown="horarios(1)">00h00</div>
-          <div class="item" id="item-2" onMouseDown="horarios(2)">01h00</div>
-          <div class="item" id="item-3" onMouseDown="horarios(3)">02h00</div>
-          <div class="item" id="item-4" onMouseDown="horarios(4)">03h00</div>
-          <div class="item" id="item-5" onMouseDown="horarios(5)">04h00</div>
-          <div class="item" id="item-6" onMouseDown="horarios(6)">05h00</div>
-          <div class="item" id="item-7" onMouseDown="horarios(7)">06h00</div>
-          <div class="item" id="item-8" onMouseDown="horarios(8)">07h00</div>
-          <div class="item" id="item-9" onMouseDown="horarios(9)">08h00</div>
-          <div class="item" id="item-10" onMouseDown="horarios(10)">09h00</div>
-          <div class="item" id="item-11" onMouseDown="horarios(11)">10h00</div>
-          <div class="item" id="item-12" onMouseDown="horarios(12)">11h00</div>
-          <div class="item" id="item-13" onMouseDown="horarios(13)">12h00</div>
-          <div class="item" id="item-14" onMouseDown="horarios(14)">13h00</div>
-          <div class="item" id="item-15" onMouseDown="horarios(15)">14h00</div>
-          <div class="item" id="item-16" onMouseDown="horarios(16)">15h00</div>
-          <div class="item" id="item-17" onMouseDown="horarios(17)">16h00</div>
-          <div class="item" id="item-18" onMouseDown="horarios(18)">17h00</div>
-          <div class="item" id="item-19" onMouseDown="horarios(19)">18h00</div>
-          <div class="item" id="item-20" onMouseDown="horarios(20)">19h00</div>
-          <div class="item" id="item-21" onMouseDown="horarios(21)">20h00</div>
-          <div class="item" id="item-22" onMouseDown="horarios(22)">21h00</div>
-          <div class="item" id="item-23" onMouseDown="horarios(23)">22h00</div>
-          <div class="item" id="item-24" onMouseDown="horarios(24)">23h00</div>
-        </div>
-      </div>
-    </div> -->
-
-
+        <!-- BOTÃO ADICIONAR ATIVIDADE -->
         <a href="#"><button class="btn-adicionar-atividade"><img class="adicionar-atividade" src="../assets/img/icone-adicionar-atividade.svg" alt="Adcionar atividade">Adicionar Atividade</button></a>
+
+        <!-- BOTÃO EXCLUIR ATIVIDADE -->
         <a href="#"><button class="btn-excluir-atividade"><img class="excluir-atividade" src="../assets/img/icone-excluir-atividade.svg" alt="Excluir atividade">Excluir Todos</button></a>
       </section>
       <section class="flex-container">
         <div class="container-timezone">
           <p class="horario-timezone">Horário</p>
-        </div> 
+        </div>
         <div class="container-dias">
           <a href="#"><button class="btn btn-segunda-feira">Segunda-feira</button></a>
           <a href="#"><button class="btn btn-terca-feira">Terça-feira</button></a>
@@ -106,8 +87,8 @@
       <div class="container-scrollbar-horizontal  Flipped">
         <div class="scrollbar-horizontal">
           <div id="teste">
-            <h1 id="digito"></h1>
-            <h1 id="digito"></h1>
+            <h1 id="digito">Primeiro</h1>
+            <h1 id="digito">Segundo</h1>
           </div>
         </div>
       </div>
