@@ -61,8 +61,7 @@
 
         <!-- SELECT DE HORÁRIOS -->
         <label for="appt"></label>
-        <input value="00h12"
-      type="text" id="appt" name="appt" min="09:00" max="18:00" required>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
 
         <!-- BOTÃO ADICIONAR ATIVIDADE -->
         <a href="#"><button class="btn-adicionar-atividade"><img class="adicionar-atividade" src="../assets/img/icone-adicionar-atividade.svg" alt="Adcionar atividade">Adicionar Atividade</button></a>
@@ -70,10 +69,14 @@
         <!-- BOTÃO EXCLUIR ATIVIDADE -->
         <a href="#"><button class="btn-excluir-atividade"><img class="excluir-atividade" src="../assets/img/icone-excluir-atividade.svg" alt="Excluir atividade">Excluir Todos</button></a>
       </section>
+
       <section class="flex-container">
+
         <div class="container-timezone">
           <p class="horario-timezone">Horário</p>
         </div>
+
+        <!-- BOTÕES DIAS DA SEMANA -->
         <div class="container-dias">
           <a href="#"><button class="btn btn-segunda-feira">Segunda-feira</button></a>
           <a href="#"><button class="btn btn-terca-feira">Terça-feira</button></a>
@@ -84,6 +87,13 @@
           <a href="#"><button class="btn btn-domingo">Domingo</button></a>
         </div>
       </section>
+
+      <section class="box-tarefas">
+
+      <div class="card-horario">
+        <p>10h30m</p>
+      </div>
+
       <div class="container-scrollbar-horizontal  Flipped">
         <div class="scrollbar-horizontal">
           <div id="teste">
@@ -94,6 +104,7 @@
       </div>
     </div>
   </div>
+</section>
   <script src="../page/index.js"></script>
 </body>
 
