@@ -158,38 +158,64 @@ img {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   border: none;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  padding: 5px 23px;
+  padding: 2px 5px;
+  width: 150px;
+  height: 30px;
+}
+.btn:hover {
+  width: 152px;
+  height: 33px;
 }
 .btn-segunda-feira {
   background-color: #ffa246;
 }
+.btn-segunda-feira:hover {
+  background-color: #f5800b;
+}
 .btn-terca-feira {
   background-color: #35e185;
+}
+.btn-terca-feira:hover {
+  background-color: #0abd5e;
 }
 .btn-quarta-feira {
   background-color: #6688ff;
 }
+.btn-quarta-feira:hover {
+  background-color: #5679fa;
+}
 .btn-quinta-feira {
   background-color: #b266ff;
+}
+.btn-quinta-feira:hover {
+  background-color: #9337ef;
 }
 .btn-sexta-feira {
   background-color: #66d1ff;
 }
+.btn-sexta-feira:hover {
+  background-color: #0cabef;
+}
 .btn-sabado {
   background-color: #ff66d4;
 }
+.btn-sabado:hover {
+  background-color: #f133bc;
+}
 .btn-domingo {
   background-color: #ff6666;
+}
+.btn-domingo:hover {
+  background-color: #f64848;
 }
 .container-scrollbar-horizontal {
   height: 100vh;
   width: 100vw;
   overflow-y: auto;
-  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -199,7 +225,13 @@ img {
   height: 100vh;
   transform: rotateX(180deg);
   margin: 25px 9px;
+  z-index: -2;
 }
+#teste {
+  width: 550px;
+  height: 90px;
+}
+
 .Flipped,
 .Flipped .scrollbar {
   transform: rotateX(180deg);
@@ -248,11 +280,87 @@ img {
 }
 
 #digito {
-  width: 10%;
-  background-color: #bf90ee;
-  padding: 50px 400px 50px 20px;
-  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 450px 45px;
+  padding: 2px;
+  width: 500px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 12px;
   margin-bottom: 9px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.digito-segunda-feira {
+  border-left: 15px solid #ffa246;
+}
+.digito-segunda-feira {
+  border-left: 15px solid #ffa246;
+}
+.digito-terca-feira {
+  border-left: 15px solid #35e185;
+}
+.digito-quarta-feira {
+  border-left: 15px solid #6688ff;
+}
+.digito-quinta-feira {
+  border-left: 15px solid #b266ff;
+}
+.digito-sexta-feira {
+  border-left: 15px solid #66d1ff;
+}
+.digito-sabado {
+  border-left: 15px solid #ff66d4;
+}
+.digito-domingo {
+  border-left: 15px solid #ff6666;
+}
+#texto-descricao {
+  margin: 10px;
+}
+.btn-apagar {
+  background-color: #98031e;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  width: 60px;
+  height: 20px;
+  justify-self: end;
+}
+
+.card-horario {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  text-align: center;
+  align-items: center;
+  background-color: #2cbe82;
+}
+.card-color-horario-segunda-feira {
+  background-color: #ffa346b1;
+}
+.card-color-horario-terca-feira {
+  background-color: #35e185a0;
+}
+.card-color-horario-quarta-feira {
+  background-color: #6687ff92;
+}
+.card-color-horario-quinta-feira {
+  background-color: #b366ff93;
+}
+.card-color-horario-sexta-feira {
+  background-color: #66d1ff88;
+}
+.card-color-horario-sabado {
+  background-color: #ff66d488;
+}
+.card-color-horario-domingo {
+  background-color: #f55d5d66;
 }
 
 input {
@@ -262,19 +370,27 @@ input {
   border: solid #2cbe82 1px;
   padding: 5px;
 }
-.card-horario {
-  display: flex;
-  flex-direction: column;
-  width: 85px;
-  height: 85px;
-  background-color: #6688ff66;
-  border-radius: 10px;
-  margin-top: 35px;
-  margin-left: 10px;
-  text-align: center;
-  padding: 10px 5px 10px 5px;
-}
 .box-tarefas {
   display: flex;
   flex-direction: row;
+}
+.horarios {
+  margin-top: 35px;
+  width: 110px;
+  height: 100vh;
+}
+
+/* Quando houver conflio de horários  */
+.scrollbar-horizontal-conflito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.horarios-conflito {
+  margin-top: 35px;
+  width: 110px;
+  height: 100vh;
+  z-index: 100;
+}
+.img-zindex{
+   
 }

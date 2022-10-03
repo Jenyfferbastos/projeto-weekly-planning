@@ -44,8 +44,7 @@
       <section class="section-atividade">
 
         <!-- INPUT DESCRIÇÃO ATIVIDADE -->
-        <input type="text" name="valor" id="valor" class="atividade-descricao" placeholder="Atividade">
-        <input type="submit" name="" onclick="chamar()">
+        <input type="text" name="valor" id="atividade-descricao" class="atividade-descricao" placeholder="Atividade">
 
         <!-- SELECT DIAS DA SEMANA -->
         <select class="weekday-select" aria-label="Dias da semana">
@@ -64,10 +63,10 @@
         <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
 
         <!-- BOTÃO ADICIONAR ATIVIDADE -->
-        <a href="#"><button class="btn-adicionar-atividade"><img class="adicionar-atividade" src="../assets/img/icone-adicionar-atividade.svg" alt="Adcionar atividade">Adicionar Atividade</button></a>
+        <a href="#"><button class="btn-adicionar-atividade" onclick="criarAtividade()"><img class="adicionar-atividade" src="../assets/img/icone-adicionar-atividade.svg" alt="Adcionar atividade"">Adicionar Atividade</button></a>
 
         <!-- BOTÃO EXCLUIR ATIVIDADE -->
-        <a href="#"><button class="btn-excluir-atividade"><img class="excluir-atividade" src="../assets/img/icone-excluir-atividade.svg" alt="Excluir atividade">Excluir Todos</button></a>
+        <a href=" #"><button class="btn-excluir-atividade"><img class="excluir-atividade" src="../assets/img/icone-excluir-atividade.svg" alt="Excluir atividade">Excluir Todos</button></a>
       </section>
 
       <section class="flex-container">
@@ -78,33 +77,43 @@
 
         <!-- BOTÕES DIAS DA SEMANA -->
         <div class="container-dias">
-          <a href="#"><button class="btn btn-segunda-feira">Segunda-feira</button></a>
-          <a href="#"><button class="btn btn-terca-feira">Terça-feira</button></a>
-          <a href="#"><button class="btn btn-quarta-feira">Quarta-feira</button></a>
-          <a href="#"><button class="btn btn-quinta-feira">Quinta-feira</button></a>
-          <a href="#"><button class="btn btn-sexta-feira">Sexta-feira</button></a>
-          <a href="#"><button class="btn btn-sabado">Sábado</button></a>
-          <a href="#"><button class="btn btn-domingo">Domingo</button></a>
+          <a href="#"><button class="btn btn-segunda-feira" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Segunda-feira</button></a>
+          <a href="#"><button class="btn btn-terca-feira" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Terça-feira</button></a>
+          <a href="#"><button class="btn btn-quarta-feira" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Quarta-feira</button></a>
+          <a href="#"><button class="btn btn-quinta-feira" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Quinta-feira</button></a>
+          <a href="#"><button class="btn btn-sexta-feira" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Sexta-feira</button></a>
+          <a href="#"><button class="btn btn-sabado" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Sábado</button></a>
+          <a href="#"><button class="btn btn-domingo" onclick="buscarCardsPeloDiaDaSemanaViaBotao(this)">Domingo</button></a>
         </div>
       </section>
 
       <section class="box-tarefas">
 
-      <div class="card-horario">
-        <p>10h30m</p>
-      </div>
-
-      <div class="container-scrollbar-horizontal  Flipped">
-        <div class="scrollbar-horizontal">
-          <div id="teste">
-            <h1 id="digito">Primeiro</h1>
-            <h1 id="digito">Segundo</h1>
+        <div class="horarios horarios-conflito">
+          <div class="img-zindex">
+            <img src="../assets/img/linha-conflito.svg" alt="Conflito de horários" class="img-zindex">
           </div>
         </div>
-      </div>
+
+        <div class="container-scrollbar-horizontal  Flipped">
+          <div class="scrollbar-horizontal">
+            <div id="teste">
+              <div id="digito" class="digito-segunda-feira">
+                <p id="texto-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <button class="btn-apagar">Apagar</button>
+              </div>
+            </div>
+            <div id="teste">
+              <div id="digito" class="digito-segunda-feira">
+                <p id="texto-descricao">Documento</p>
+                <button class="btn-apagar">Apagar</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
-</section>
+  </section>
   <script src="../page/index.js"></script>
 </body>
 
